@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation components</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav collapsible">
+        <a aria-label="Nile-Tech" class="nav__brand" href="/"
+          ><img class="nav__image" src="../image/melke.jpg" alt="" />Melkamu
+        </a>
+        <svg class="icon icon--white nav__toggler">
+          <use href="../image/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a target="_blank" href="#">Hosting</a>
+          </li>
+          <li class="nav__item">
+            <a target="_blank" href="#">VPS</a>
+          </li>
+          <li class="nav__item">
+            <a target="_blank" href="#">Domain</a>
+          </li>
+          <li class="nav__item">
+            <a target="_blank" href="#">Pricing</a>
+          </li>
+
+          <li class="nav__item">
+            <a target="_blank" href="#">Profile</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
