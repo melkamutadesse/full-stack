@@ -8,7 +8,7 @@
   --color-body-darker: #5c5577;
   --color-body-light: #fff;
   --color-border: #ccc;
-  --border-radius: 30px;
+  --border-radius: 3rem;
 }
 
 *,
@@ -327,16 +327,22 @@ a {
 }
 
 /* Cards */
-
+.card__skills {
+  background: #000;
+  color: var(--color-body);
+}
 .card {
-  border-radius: 7px;
-  box-shadow: 0 0 20px 10px #f3f3f3;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 1rem 0.5rem #303030;
   overflow: hidden;
 }
-
+.card__heading {
+  color: #eceff0;
+  border: 0 0 1rem solid #4e4c4c;
+}
 .card__header,
 .card__body {
-  padding: 2rem 7%;
+  padding: 1rem 7%;
 }
 
 .card--primary .card__header {
@@ -347,6 +353,10 @@ a {
 .card--secondary .card__header {
   background: var(--color-secondary);
   color: #fff;
+}
+.card__skills .block__heading {
+  background: #000;
+  color: cornsilk;
 }
 
 .card--primary .badge--primary {
@@ -673,12 +683,15 @@ a {
   flex-wrap: wrap;
   padding: 1rem;
   align-items: center;
+  border: #494444 0.08rem solid;
+  box-shadow: 0 0 0 0.3rem #ccc;
+  margin-top: 0.1rem;
 }
 
 .nav__image {
   width: 7rem;
   height: 5.5rem;
-  border-radius: 40%;
+  border-radius: 50%;
   margin-right: 0.5rem;
   margin-top: -0.5rem;
 }
@@ -686,6 +699,7 @@ a {
   font-size: 2.8rem;
   color: #fff;
   display: flex;
+  width: 30%;
 }
 .nav__list {
   width: 100%;
@@ -695,6 +709,7 @@ a {
 .nav__item {
   padding: 0.5rem 2rem;
   border-bottom: 1px solid #222;
+  margin-top: 1rem;
 }
 
 .nav__item:last-of-type {
@@ -734,12 +749,15 @@ a {
   .nav__list {
     width: auto;
     display: flex;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     max-height: 100%;
     opacity: 1;
   }
   .nav__item {
     border: 0;
+  }
+  .nav__brand {
+    width: 30%;
   }
 }
 
@@ -749,9 +767,19 @@ a {
   font-size: 2rem;
   color: #b9c3cf;
   letter-spacing: 1px;
-  margin: 2rem 0 5rem;
+  margin: 1rem 0 2rem;
+  line-height: 1.5;
+  text-decoration: justify;
+  text-align: left;
 }
-
+.hero__image {
+  border-radius: 35%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 0;
+  box-shadow: 0 0 2rem 0.5rem #4b4b4b;
+}
 @media screen and (min-width: 768px) {
   .hero__content {
     text-align: left;
